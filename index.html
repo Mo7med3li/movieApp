@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Movie App</title>
+  </head>
+  <body>
+    <div class="loading">
+      <span class="loader"></span>
+    </div>
+    <div class="scroll-to-top shadow">
+      <div class="icon">
+        <i class="fa-solid fa-arrow-up"></i>
+      </div>
+    </div>
+    <header>
+      <aside class="d-flex">
+        <div class="side-bar-container">
+          <div
+            class="side-bar d-flex h-100 flex-column justify-content-between"
+          >
+            <div class="menu px-3 py-1">
+              <ul class="list-unstyled">
+                <li class="py-3 search fw-light">Now Playing</li>
+                <li class="py-3 categories fw-light popular">Popular</li>
+                <li class="py-3 area fw-light">Top Rated</li>
+                <li class="py-3 ingredients fw-light">Trending</li>
+                <li class="py-3 contact fw-light">Upcoming</li>
+                <li class="py-3 contact fw-light">
+                  <a href="#contact" class="text-decoration-none text-white"
+                    >Contact US</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="side-footer p-3">
+              <ul class="d-flex list-unstyled gap-3 mb-0">
+                <li>
+                  <a href="" class="text-white"
+                    ><i class="fa-brands fa-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="" class="text-white"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="" class="text-white"
+                    ><i class="fa-solid fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+              <p class="m-0 fw-light">Copyright Â© 2019 All Rights</p>
+              <p class="fw-light">Reserved.</p>
+              <p class="fw-light">
+                Created By
+                <span
+                  ><a
+                    href="https://github.com/Develekko"
+                    class="text-danger text-decoration-none"
+                    >Housam Ramdan</a
+                  ></span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="side-icons d-flex flex-column justify-content-between align-items-center bg-white"
+        >
+          <div class="logo p-1">
+            <img src="assets/imgs/logo (1).png" alt="" />
+          </div>
+          <div class="icons-menu p-2">
+            <i class="fa-solid fa-bars fs-1"></i>
+          </div>
+          <div class="icon-close p-2">
+            <i class="fa-solid fa-xmark fs-1"></i>
+          </div>
+          <div class="other-icons p-2">
+            <ul class="list-unstyled">
+              <li>
+                <a href="" class="text-dark"
+                  ><i class="fa-solid fa-globe"></i
+                ></a>
+                <a href="" class="text-dark"
+                  ><i class="fa-solid fa-share-nodes"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+      <div class="container py-5">
+        <div class="search text-center pb-4">
+          <input
+            type="search"
+            placeholder="Search"
+            class="w-50 search-input p-1 px-3"
+          />
+        </div>
+        <div class="row py-4 movies g-5"></div>
+        <form
+          action="
+        "
+        >
+          <div class="row py-3 fw-medium g-3" id="contact">
+            <h3 class="text-white">Contact Us</h3>
+            <div class="col-md-6">
+              <input
+                type="text"
+                class="w-100 name"
+                placeholder="Enter Your Name"
+              />
+              <p class="text-danger err">
+                Invalid Name , only Characters allowed
+              </p>
+            </div>
+            <div class="col-md-6">
+              <input
+                required
+                type="email"
+                class="w-100 email"
+                placeholder="Enter Your Email"
+              />
+              <p class="text-danger err">
+                Invalid Email , try example@domain.com
+              </p>
+            </div>
+            <div class="col-md-6">
+              <input
+                type="number"
+                required
+                class="w-100 phone"
+                placeholder="Enter Your Phone"
+              />
+              <p class="text-danger err">Invalid Phone Number</p>
+            </div>
+            <div class="col-md-6">
+              <input
+                type="number"
+                class="w-100 age"
+                placeholder="Enter Your Age"
+                required
+              />
+              <p class="text-danger err">Your age must be over 16+</p>
+            </div>
+            <div class="col-md-6">
+              <div class="password-field position-relative">
+                <input
+                  type="password"
+                  class="w-100 pass"
+                  placeholder="Enter Your Password"
+                  required
+                />
+                <p class="text-danger err">
+                  Password must contain numbers & letters at least 8 Character
+                </p>
+                <span class="d-flex align-items-center eyes"
+                  ><i class="fas fa-eye text-white eshow"></i>
+                  <i class="fa-solid fa-eye-slash text-white ehide"></i
+                ></span>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <input
+                type="password"
+                class="w-100 repass"
+                required
+                placeholder="ReEnter Your Password "
+              />
+              <p class="text-danger err">Password not match</p>
+            </div>
+          </div>
+          <button class="btn submit-btn">Sumbit</button>
+        </form>
+      </div>
+    </header>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
